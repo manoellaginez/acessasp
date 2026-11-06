@@ -1,0 +1,18 @@
+{
+  "name": "acessasp",
+  "version": "1.0.0",
+  "description": "AcessaSP - registro colaborativo de barreiras de acessibilidade urbana (Global Solution 2026.2 - CitizenTech)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node scripts/seed.js"
+  },
+  "keywords": ["acessibilidade", "cidadania", "express", "mongodb"],
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.0"
+  }
+}

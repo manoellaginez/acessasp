@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AcessaSP | Registros e indicadores</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="container topo-inner">
+      <a class="logo" href="/">Acessa<span>SP</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="/">Registrar</a>
+        <a href="/registros.html" aria-current="page">Registros e indicadores</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container pagina">
+    <h1>Registros e indicadores</h1>
+    <p class="sub">Dados processados a partir das ocorrências cadastradas pela comunidade</p>
+
+    <section aria-labelledby="titulo-ind">
+      <h2 id="titulo-ind" class="oculto-visual">Indicadores</h2>
+      <div class="kpis">
+        <div class="kpi">
+          <span class="kpi-label">Total de registros</span>
+          <strong class="kpi-valor" id="kpi-total">–</strong>
+        </div>
+        <div class="kpi kpi-alta">
+          <span class="kpi-label">Prioridade alta</span>
+          <strong class="kpi-valor" id="kpi-alta">–</strong>
+          <small id="kpi-alta-pct"></small>
+        </div>
+        <div class="kpi">
+          <span class="kpi-label">Bairro mais afetado</span>
+          <strong class="kpi-valor kpi-texto" id="kpi-bairro">–</strong>
+          <small id="kpi-bairro-qtd"></small>
+        </div>
+      </div>
+
+      <div class="paineis">
+        <div class="painel">
+          <h3>Resumo por categoria</h3>
+          <div id="grafico-categoria" class="barras"></div>
+        </div>
+        <div class="painel">
+          <h3>Resumo por prioridade</h3>
+          <div id="grafico-prioridade" class="barras"></div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="titulo-lista">
+      <div class="lista-topo">
+        <h2 id="titulo-lista">Ocorrências cadastradas</h2>
+        <div class="filtros">
+          <label for="f-categoria" class="oculto-visual">Filtrar por categoria</label>
+          <select id="f-categoria"><option value="">Todas as categorias</option></select>
+          <label for="f-prioridade" class="oculto-visual">Filtrar por prioridade</label>
+          <select id="f-prioridade"><option value="">Todas as prioridades</option></select>
+        </div>
+      </div>
+      <div id="lista" class="lista"></div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">AcessaSP · Protótipo acadêmico · Global Solution 2026.2 · FIAP</div>
+  </footer>
+
+  <script src="/js/registros.js"></script>
+</body>
+</html>

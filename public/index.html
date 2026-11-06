@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AcessaSP | Registre barreiras de acessibilidade</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#form-ocorrencia">Ir para o formulário</a>
+
+  <header class="topo">
+    <div class="container topo-inner">
+      <a class="logo" href="/">Acessa<span>SP</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="/" aria-current="page">Registrar</a>
+        <a href="/registros.html">Registros e indicadores</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Cidade acessível começa com quem a vive todos os dias</h1>
+        <p class="lead">Registre calçadas quebradas, rampas ausentes, semáforos sem aviso sonoro e outras barreiras. Os dados viram indicadores para mostrar onde agir primeiro.</p>
+
+        <div class="intro-grid">
+          <article class="card-info">
+            <h2>Problema</h2>
+            <p>Barreiras de acessibilidade urbana limitam a locomoção de pessoas com deficiência, idosos e gestantes, e raramente são registradas de forma organizada.</p>
+          </article>
+          <article class="card-info">
+            <h2>Público-alvo</h2>
+            <p>Pessoas com deficiência, mobilidade reduzida, idosos, famílias com carrinhos de bebê e coletivos que cobram melhorias do poder público.</p>
+          </article>
+          <article class="card-info">
+            <h2>Objetivo</h2>
+            <p>Centralizar relatos da comunidade e transformá-los em informação priorizada por categoria, prioridade e bairro.</p>
+          </article>
+          <article class="card-info">
+            <h2>ODS</h2>
+            <p><strong>ODS 11</strong> – Cidades e Comunidades Sustentáveis<br><strong>ODS 10</strong> – Redução das Desigualdades</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container form-area">
+      <h2>Registrar nova ocorrência</h2>
+      <p class="sub">Todos os campos são obrigatórios</p>
+
+      <div id="mensagem" role="alert" aria-live="polite" class="mensagem oculto"></div>
+
+      <form id="form-ocorrencia" novalidate>
+        <div class="campo">
+          <label for="titulo">Título da ocorrência</label>
+          <input type="text" id="titulo" name="titulo" minlength="5" maxlength="80" placeholder="Ex.: Calçada quebrada em frente ao metrô" required>
+        </div>
+
+        <div class="linha">
+          <div class="campo">
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria" required>
+              <option value="">Selecione...</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="prioridade">Prioridade</label>
+            <select id="prioridade" name="prioridade" required>
+              <option value="">Selecione...</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro" minlength="2" maxlength="60" placeholder="Ex.: Bela Vista" required>
+        </div>
+
+        <div class="campo">
+          <label for="descricao">Descrição <small id="contador">0/400</small></label>
+          <textarea id="descricao" name="descricao" rows="4" minlength="10" maxlength="400" placeholder="Descreva o problema e como ele afeta a locomoção das pessoas." required></textarea>
+        </div>
+
+        <button type="submit" class="btn" id="btn-enviar">Registrar ocorrência</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">AcessaSP · Protótipo acadêmico · Global Solution 2026.2 · FIAP</div>
+  </footer>
+
+  <script src="/js/form.js"></script>
+</body>
+</html>
