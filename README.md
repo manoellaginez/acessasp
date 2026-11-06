@@ -83,9 +83,8 @@ acessasp/
 
 ## 9. Vídeo pitch
 
-Link: 
+Link: https://youtu.be/Bi7siKpt3Vc?is=u3Z5gfm228uerZM2
 
 ## 10. Autoria
 
-Manoella dos Santos Ginez - RM564469
-Leonardo de Magalhães Piassa - RM563663
+Manoella dos Santos Ginez - RM564469 | Leonardo de Magalhães Piassa - RM563663
